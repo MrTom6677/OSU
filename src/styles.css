@@ -5,8 +5,8 @@ body{
 }
 
 #header{
-    width: 100%;
-    
+width: 100%;
+background: rgb(28, 81, 151);
 }
 
 
@@ -16,6 +16,7 @@ margin-top: 7px;
 margin-left: 5px;
 margin-bottom: 7px;
 float: left;
+
 }
 
 .navbar-brand{
@@ -28,19 +29,35 @@ margin-top: 10px;
 
 }
 
+#menu-top li a{
+color: white;
+}
+
 #menu-top li a:hover{
-background: #f1f1f1;
+background: #88b7dd;
 color: black;
 height:100%;
+
 }
 
 .input-group{
-    width: 300px;
+    width: 280px;
     margin-top: 10px;
+    float: left;
 }
 
-#hLogin{
-    margin-top: 10px;
+
+#hLogin ul li a{
+color: white;
+margin-top: 20px;
+}
+
+#hLogin ul li a:hover{
+color: black;
+}
+
+##hLogin ul li a:hover span:hover{
+background: black;
 }
 
 #body{
