@@ -7,16 +7,31 @@
   <meta charset="utf-8">
   <title>OSU</title>
   <base href="/">
-  
+
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script>
+    $(document).ready(function() {
+
+        var div = $('#header');
+        var start = $(div).offset().top;
+
+        $.event.add(window, "scroll", function() {
+            var p = $(window).scrollTop();
+            $(div).css('position',((p)>start) ? 'fixed' : 'static');
+            $(div).css('top',((p)>start) ? '0px' : '');
+        });
+
+    });
+    </script>
 </head>
 <body>
     <div id="header">
-      
+
         <img id="icon" src="https://www.bugsplat.com/images/icons/angular_icon_blue.png" height="55px" width="55px"/>
         <div class="container-fluid">
           <div class="navbar-header">
@@ -45,16 +60,26 @@
             </ul>
           </div>
         </div>
-      
+
     </div>
    <div id="body">
       <div class="container">
         <h3>FROM</h3>
       </div>
    </div>
+
+
    <div id="footer">
-      this is footer
+      <div id="adress">
+        <a href="#"><i class="fa fa-github"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-youtube"></i></a>
+        <a href="#"><i class="fa fa-facebook-square"></i></a>
+      </div>
+      <div id="ngconten">
+          © 2018 - Mr.Tom
+      </div>
    </div>
-   
+
 </body>
 </html>

@@ -1,7 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 body{
-    margin: 0;
-    padding: 0;
+margin: 0;
+padding: 0;
 }
 
 #header{
@@ -31,18 +31,19 @@ margin-top: 10px;
 
 #menu-top li a{
 color: white;
+
 }
 
 #menu-top li a:hover{
-background: #88b7dd;
-color: black;
+background: rgb(28, 81, 151);
+color: rgb(138, 156, 194);
 height:100%;
 
 }
 
 .input-group{
-    width: 280px;
-    margin-top: 10px;
+width: 280px;
+margin-top: 10px;
     float: left;
 }
 
@@ -53,12 +54,11 @@ margin-top: 20px;
 }
 
 #hLogin ul li a:hover{
-color: black;
+color:black;
+background: rgb(28, 81, 151);
 }
 
-##hLogin ul li a:hover span:hover{
-background: black;
-}
+
 
 #body{
 background: rgb(147, 147, 182);
@@ -70,8 +70,38 @@ padding: 0px;
 }
 
 #footer{
-background: rgb(196, 48, 48);
+background: rgb(28, 81, 151);
 width: 100%;
-height: 200px;
+height: 135px;
 float: left;
+}
+
+#adress{
+font-size:50px;
+color:white;
+margin-left: 390px;
+margin-top: 25px;
+
+}
+
+#adress a{
+color: white;
+
+}
+
+#adress a i{
+margin-left: 58px;
+
+}
+
+#adress a i:hover{
+color: rgb(138, 156, 194);
+}
+
+#ngconten{
+float: left;
+color: white;
+margin-left: 46%;
+margin-top: 15px;
+font-size: 15px;
 }
